@@ -1,0 +1,25 @@
+<% if flash[:error] %>
+  <p>
+    Wrong input: <%= flash[:error] %>
+  </p>
+<% end %>
+
+<p>
+  You have <%= pluralize @game.guesses_left, "guess" %> left.
+</p>
+
+<% if @game.won? %>
+  <%= render 'won' %>
+<% elsif @game.lost? %>
+  <%= render 'lost' %>
+<% else %>
+  Enter your guess:
+  <%= form_for [@game, @guess] do |guess_form| %>
+    <%= guess_form.fields_for :guessed_colors do |guessed_colors_fields| %>
+      <%= guessed_colors_fields.select :color_id, Color.all.collect {|color| [color.color_name, color.id]} %>
+    <% end %>
+    <%= guess_form.submit "Check" %>
+  <% end %>
+<% end %>
+
+<%= render 'display_progress' %>

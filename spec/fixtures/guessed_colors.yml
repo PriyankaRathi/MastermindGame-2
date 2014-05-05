@@ -1,0 +1,179 @@
+guessed_color1:
+  id: 1
+  guess: guess_a
+  color_id: 2
+
+guessed_color2:
+  id: 2
+  guess: guess_a
+  color_id: 2
+
+guessed_color3:
+  id: 3
+  guess: guess_a
+  color_id: 2
+
+guessed_color4:
+  id: 4
+  guess: guess_a
+  color_id: 1
+
+guessed_color5:
+  id: 5
+  guess: guess_b
+  color_id: 1
+
+guessed_color6:
+  id: 6
+  guess: guess_b
+  color_id: 2
+
+guessed_color7:
+  id: 7
+  guess: guess_b
+  color_id: 2
+
+guessed_color8:
+  id: 8
+  guess: guess_b
+  color_id: 2
+
+guessed_color9:
+  id: 9
+  guess: guess_c
+  color_id: 2
+
+guessed_color10:
+  id: 10
+  guess: guess_c
+  color_id: 2
+
+guessed_color11:
+  id: 11
+  guess: guess_c
+  color_id: 2
+
+guessed_color12:
+  id: 12
+  guess: guess_c
+  color_id: 1
+
+guessed_color13:
+  id: 13
+  guess: guess_d
+  color_id: 1
+
+guessed_color14:
+  id: 14
+  guess: guess_d
+  color_id: 2
+
+guessed_color15:
+  id: 15
+  guess: guess_d
+  color_id: 2
+
+guessed_color16:
+  id: 16
+  guess: guess_d
+  color_id: 3
+
+guessed_color17:
+  id: 17
+  guess: guess_e
+  color_id: 2
+
+guessed_color18:
+  id: 18
+  guess: guess_e
+  color_id: 2
+
+guessed_color19:
+  id: 19
+  guess: guess_e
+  color_id: 2
+
+guessed_color20:
+  id: 20
+  guess: guess_e
+  color_id: 1
+
+guessed_color21:
+  id: 21
+  guess: guess_f
+  color_id: 1
+
+guessed_color22:
+  id: 22
+  guess: guess_f
+  color_id: 2
+
+guessed_color23:
+  id: 23
+  guess: guess_f
+  color_id: 2
+
+guessed_color24:
+  id: 24
+  guess: guess_f
+  color_id: 3
+
+guessed_color25:
+  id: 25
+  guess: guess_g
+  color_id: 1
+
+guessed_color26:
+  id: 26
+  guess: guess_g
+  color_id: 4
+
+guessed_color27:
+  id: 27
+  guess: guess_g
+  color_id: 3
+
+guessed_color28:
+  id: 28
+  guess: guess_g
+  color_id: 5
+
+guessed_color29:
+  id: 29
+  guess: guess_h
+  color_id: 1
+
+guessed_color30:
+  id: 30
+  guess: guess_h
+  color_id: 1
+
+guessed_color31:
+  id: 31
+  guess: guess_h
+  color_id: 2
+
+guessed_color32:
+  id: 32
+  guess: guess_h
+  color_id: 3
+
+guessed_color33:
+  id: 33
+  guess: guess_i
+  color_id: 2
+
+guessed_color34:
+  id: 34
+  guess: guess_i
+  color_id: 1
+
+guessed_color35:
+  id: 35
+  guess: guess_i
+  color_id: 1
+
+guessed_color36:
+  id: 36
+  guess: guess_i
+  color_id: 3

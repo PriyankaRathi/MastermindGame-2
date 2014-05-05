@@ -1,0 +1,18 @@
+<% if @game.guesses.count > 0 %>
+  <table>
+    <% @game.guesses(true).reverse_each do |guess| %>
+      <tr>
+        <% guess.guessed_colors.each do |color| %>
+          <td> <%= image_tag Color.color_image_name_from_color_id(color.color_id), alt: Color.color_image_name_from_color_id(color.color_id) %> </td>
+        <% end %>
+        <td>
+          <p>
+            <%= pluralize_sentence(guess.correct_digits_count, "color_count") %>
+            <br>
+            <%= pluralize_sentence(guess.correct_at_wrong_postion_digit_count, "color_count_wrong_postion") %>
+          </p> 
+        </td>   
+      </tr>
+    <% end %>
+  </table>
+<% end %>

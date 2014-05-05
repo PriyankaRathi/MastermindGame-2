@@ -1,0 +1,79 @@
+game_color1:
+  id: 1
+  game: game1
+  color_id: 1
+
+game_color2:
+  id: 2
+  game: game1
+  color_id: 2
+
+game_color3:
+  id: 3
+  game: game1
+  color_id: 3
+
+game_color4:
+  id: 4
+  game: game1
+  color_id: 4
+
+game_color5:
+  id: 5
+  game: game2
+  color_id: 1
+
+game_color6:
+  id: 6
+  game: game2
+  color_id: 2
+
+game_color7:
+  id: 7
+  game: game2
+  color_id: 2
+
+game_color8:
+  id: 8
+  game: game2
+  color_id: 3
+
+game_color9:
+  id: 9
+  game: game3
+  color_id: 1
+
+game_color10:
+  id: 10
+  game: game3
+  color_id: 1
+
+game_color11:
+  id: 11
+  game: game3
+  color_id: 1
+
+game_color12:
+  id: 12
+  game: game3
+  color_id: 2
+
+game_color13:
+  id: 13
+  game: game4
+  color_id: 3
+
+game_color14:
+  id: 14
+  game: game4
+  color_id: 1
+
+game_color15:
+  id: 15
+  game: game4
+  color_id: 1
+
+game_color16:
+  id: 16
+  game: game4
+  color_id: 4

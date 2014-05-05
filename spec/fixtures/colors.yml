@@ -1,0 +1,19 @@
+color1:
+  id: 1
+  color_name: 'Red'
+
+color2:
+  id: 2
+  color_name: 'Blue'
+
+color3:
+  id: 3
+  color_name: 'Green'
+
+color4:
+  id: 4
+  color_name: 'Yellow'
+
+color5:
+  id: 5
+  color_name: 'Orange'

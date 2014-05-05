@@ -1,0 +1,23 @@
+game1:
+  user: Priyanka
+  number_of_guesses: 4
+  color_code_length: 4
+  allow_duplicates: false
+
+game2:
+  user: Priyanka
+  number_of_guesses: 4
+  color_code_length: 4
+  allow_duplicates: true
+
+game3:
+  user: Priyanka
+  number_of_guesses: 4
+  color_code_length: 4
+  allow_duplicates: true
+
+game4:
+  user: Priyanka
+  number_of_guesses: 4
+  color_code_length: 4
+  allow_duplicates: true

@@ -1,0 +1,26 @@
+guess_a:
+  game: game1
+  
+guess_b:
+  game: game1
+
+guess_c:
+  game: game2
+  
+guess_d:
+  game: game2
+
+guess_e:
+  game: game3
+  
+guess_f:
+  game: game3
+
+guess_g:
+  game: game3
+  
+guess_h:
+  game: game3
+
+guess_i:
+  game: game4

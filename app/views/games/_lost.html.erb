@@ -1,0 +1,12 @@
+<h1> Sorry... ! You lost the game </h1>
+<%= render 'new_game' %>
+<table>
+  <tr>
+    <% @game.game_colors.each do |color| %>
+      <td> <%= image_tag Color.color_image_name_from_color_id(color.color_id), alt: Color.color_image_name_from_color_id(color.color_id) %> </td>
+    <% end %>
+    <td>
+      <p> Correct color scheme. </p> 
+    </td>   
+  </tr>
+</table>

@@ -1,0 +1,31 @@
+<h1>Mastermind Game </h1>
+<div id="error_messages">
+  <% if @game.errors.any? %>
+    <ul>
+      <% @game.errors.full_messages.each do |msg| %>
+        <li> <%= msg %> </li>
+      <% end %>
+    </ul>
+  <% end %>
+</div>
+<%= form_for @game do |f| %>
+  <div>
+    <p>
+      <%= f.label :user, "Name" %>
+      <%= f.text_field :user %>
+    </p>
+    <p>
+      <%= f.label :number_of_guesses, "Select number of guesses" %>
+      <%= f.select :number_of_guesses, (4..10).each.select {|num| num if num % 2 == 0}.to_a %>
+    </p>
+    <p>
+      <%= f.label :color_code_length, "Select color scheme length" %>
+      <%= f.select :color_code_length, (4..Color.color_scheme_range).to_a %>
+    </p>
+    <p> 
+      <%= f.label :allow_duplicates, "Allow Duplicates" %> 
+      <%= f.check_box :allow_duplicates %>
+    </p>
+  </div>
+  <%= f.submit "Start Game" %>
+<% end %>
