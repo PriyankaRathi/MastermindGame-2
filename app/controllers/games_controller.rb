@@ -14,8 +14,12 @@ class GamesController < ApplicationController
 
   def show
     @game = Game.find(params[:id])
-
-    unless @game.won? || @game.lost?
+    
+    if @game.won?
+      render 'won'
+    elsif @game.lost?
+      render 'lost'
+    else
       @guess = @game.guesses.build
       @game.color_code_length.times do
         @guess.guessed_colors.build
