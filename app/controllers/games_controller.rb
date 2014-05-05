@@ -14,7 +14,6 @@ class GamesController < ApplicationController
 
   def show
     @game = Game.find(params[:id])
-    
     if @game.won?
       render 'won'
     elsif @game.lost?
