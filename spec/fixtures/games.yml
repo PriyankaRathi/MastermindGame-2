@@ -21,3 +21,9 @@ game4:
   number_of_guesses: 4
   color_code_length: 4
   allow_duplicates: true
+
+game5:
+  user: Priyanka
+  number_of_guesses: 4
+  color_code_length: 4
+  allow_duplicates: false

@@ -1,5 +1,5 @@
 <% if @game.guesses.count > 0 %>
-  <table>
+  <table id = "tbl_progress">
     <% @game.guesses(true).reverse_each do |guess| %>
       <tr>
         <% guess.guessed_colors.each do |color| %>

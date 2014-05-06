@@ -45,16 +45,16 @@ describe GamesController do
 
       it "should render to won" do
         get :show, :id => game.id
-        expect(response).to render_template('_won')
+        expect(response).to render_template('won')
       end
     end
 
     context "when game lost" do
       let(:game) { games(:game3) }
 
-      it "should render to won" do
+      it "should render to lost" do
         get :show, :id => game.id
-        expect(response).to render_template('_lost')
+        expect(response).to render_template('lost')
       end
     end
   end

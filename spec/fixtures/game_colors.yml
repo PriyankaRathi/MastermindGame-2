@@ -77,3 +77,23 @@ game_color16:
   id: 16
   game: game4
   color_id: 4
+
+game_color17:
+  id: 17
+  game: game5
+  color_id: 1
+
+game_color18:
+  id: 18
+  game: game5
+  color_id: 2
+
+game_color19:
+  id: 19
+  game: game5
+  color_id: 3
+
+game_color20:
+  id: 20
+  game: game5
+  color_id: 4
