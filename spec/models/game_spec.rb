@@ -6,43 +6,38 @@ describe Game do
 
     context "when entered incorrect guess" do
       let(:game) { games(:game1) }
-      it { expect(subject).to be false }
+      it { should be false }
     end
     
     context "when entered correct guess" do
       let(:game) { games(:game2) }
-      it { expect(subject).to be true }
+      it { should be true }
     end
   end
 
   describe "#latest_guess" do 
-    let(:game) { games(:game1) }
-    let (:guess) { guesses(:guess_b) }
-    subject { game.latest_guess }
-
     it "should return last guess" do
-      expect(subject).to eq guess
+      expect(games(:game1).latest_guess).to eq guesses(:guess_b)
     end
   end
 
-  describe "#lost??" do
+  describe "#lost?" do
     subject { game.lost? }
     context "When not out of guesses" do
       let(:game) { games(:game1) }
-      it { expect(subject).to be false }
+      it { should be false }
     end
 
     context "When out of guesses" do
       let(:game) { games(:game3) }
-      it { expect(subject).to be true }
+      it { should be true }
     end
   end
 
   describe "#guesses_left" do
-    subject { game.guesses_left }
-    let(:game) { games(:game2) }
-
-    it { expect(subject).to eq 2 }
+    it "should return guesses left" do
+      expect(games(:game2).guesses_left).to eq 2
+    end
   end
 
   describe "#pick_target_game_colors" do
@@ -67,15 +62,9 @@ describe Game do
     end
   end
 
-  describe "#last_guessed_colors" do
-    let(:game) { games(:game1) }
-    subject { game.last_guessed_colors }
-    it { expect(subject).to eq [1, 2, 2, 2] }
-  end
-
   describe "#target_game_colors" do
-    let(:game) { games(:game1) }
-    subject { game.target_game_colors }
-    it { expect(subject).to eq [1, 2, 3, 4] }
+    it "should return target color id" do
+      expect(games(:game1).target_game_colors).to eq [1, 2, 3, 4]
+    end
   end
 end

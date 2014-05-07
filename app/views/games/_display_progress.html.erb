@@ -7,7 +7,7 @@
         <% end %>
         <td>
           <p>
-            <%= pluralize_sentence(guess.correct_digits_count, "color_count") %>
+            <%= pluralize_sentence(guess.correct_digits_index.length, "color_count") %>
             <br>
             <%= pluralize_sentence(guess.correct_at_wrong_postion_digit_count, "color_count_wrong_postion") %>
           </p> 

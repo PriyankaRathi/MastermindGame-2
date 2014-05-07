@@ -20,9 +20,7 @@ class GamesController < ApplicationController
       render 'lost'
     else
       @guess = @game.guesses.build
-      @game.color_code_length.times do
-        @guess.guessed_colors.build
-      end
+      @guess.build_guessed_colors
     end
   end
 end

@@ -10,7 +10,7 @@ module GamesHelper
               fields.each do |color|
                 content_tag(:td, image_tag(Color.color_image_name_from_color_id(color.color_id), alt: Color.color_image_name_from_color_id(color.color_id)))
               end
-              content_tag(:td, pluralize_sentence(guess.correct_digits_count, "color_count"))
+              content_tag(:td, pluralize_sentence(guess.correct_digits_index.length, "color_count"))
               content_tag(:td, pluralize_sentence(guess.correct_at_wrong_postion_digit_count, "color_count_wrong_postion"))
             end
           end
@@ -23,7 +23,7 @@ module GamesHelper
     if count <= 1
       I18n.t(i18n_id, :count => count)
     else
-      I18n.t(plural_i18n_id || (i18n_id << "_plural"), :count => count)
+      I18n.t(plural_i18n_id || ("#{i18n_id}_plural"), :count => count)
     end
   end
 end

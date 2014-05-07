@@ -3,24 +3,13 @@ require 'spec_helper'
 describe GamesController do
   render_views
 
-  shared_examples_for "all pages" do
-    subject { get template }
-    it { should be_success }
-    it { should render_template(template) }
-  end
-
   describe "#index" do
-    let(:template) {"index"}
     
-    context "when used only / renders index" do
-      it_should_behave_like "all pages"
-      it { expect(response.status).to eq(200) }
+    it "should renders index" do
+      get :index
+      expect(response.status).to eq(200)
+      expect(response).to render_template("index")
     end
-
-    context "when used /games renders index template" do
-      it_should_behave_like "all pages"
-    end
-    
   end
 
   describe "#create" do

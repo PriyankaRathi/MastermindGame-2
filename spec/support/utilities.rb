@@ -1,5 +1,5 @@
 def is_valid_number?(target_colors)
-  /\A\d+\Z/.match(target_colors.join) == nil ? false : true
+  /\A\d+\Z/.match(target_colors.join).present?
 end
 
 def is_duplicate?(target_colors)

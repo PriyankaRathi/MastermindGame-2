@@ -2,17 +2,9 @@ require 'spec_helper'
 
 describe Guess do
   describe "#last_guessed_colors" do
-    let(:guess) { guesses(:guess_a) }
-    subject { guess.last_guessed_colors }
-
-    it { expect(subject).to eq [2, 2, 2, 1] }
-  end
-
-  describe "#target_game_colors" do
-    let(:guess) { guesses(:guess_a) }
-    subject { guess.target_game_colors }
-
-    it { expect(subject).to eq [1, 2, 3, 4] }
+    it "should return last guessed color id" do 
+      expect(guesses(:guess_a).last_guessed_colors).to eq [2, 2, 2, 1]
+    end
   end
 
   describe "#correct_digits_index" do
@@ -22,32 +14,31 @@ describe Guess do
     it { expect(subject).to eq [1] }
   end
 
-  describe "#correct_digits_count" do
-    subject { guess.correct_digits_count }
+  describe "Get correct digits count" do
+    subject { guess.correct_digits_index.length }
 
     context "when guessed guess_a" do
       let(:guess) { guesses(:guess_a) }
-      it { expect(subject).to eq 1 }
+      it { should eq 1 }
     end
 
     context "when guessed guess_i" do
       let(:guess) { guesses(:guess_i) }
-      it { expect(subject).to eq 2 }
+      it { should eq 2 }
     end
   end
   
   describe "#correct_at_wrong_postion_digit_count" do
-    before { guess.correct_digits_count }
     subject { guess.correct_at_wrong_postion_digit_count }
 
     context "when guessed guess_a" do
       let(:guess) { guesses(:guess_a) }
-      it { expect(subject).to eq 1 }
+      it { should eq 1 }
     end
 
     context "when guessed guess_i" do
       let(:guess) { guesses(:guess_i) }
-      it { expect(subject).to eq 1 }
+      it { should eq 1 }
     end
   end
 
